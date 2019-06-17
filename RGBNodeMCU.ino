@@ -60,28 +60,21 @@ void loop() {
   //            - loop will only start when wifi is connected and configured. Connect to the SSID named above from a phone or computer to configure.
   //
 
-  changeColorByHex("5300ff");
-  delay(random(100));
-  changeColorByHex("0018ff");
-  delay(random(100));
-  changeColorByHex("0060ff");
-  delay(random(100));
-  changeColorByHex("0066ff");
-  delay(random(100));
-
-  //Serial.println("Main loop end");
-
-/* 
   FadeOn(RledPin);
   FadeOn(GledPin);
   FadeOn(BledPin);
+  FadeOff(GledPin);
+  FadeOff(BledPin);
+  FadeOn(GledPin);
+  FadeOff(RledPin);
+  FadeOn(BledPin);
+  FadeOn(RledPin);
   Pulse(RledPin, 5, 1);
-  Pulse(RledPin, 5, 4);
-  Pulse(RledPin, 5, 10);
-  TurnOff(RledPin);
-  TurnOff(GledPin);
-  TurnOff(BledPin);
-*/
+  Pulse(BledPin, 5, 4);
+  Pulse(GledPin, 5, 10);
+  FadeOff(BledPin);
+  FadeOff(GledPin);
+  FadeOff(RledPin);
 
 /* 
   changeColorByHex("ff0000");
@@ -104,5 +97,30 @@ void loop() {
   delay(random(200));
   changeColorByHex("ff0000");
   delay(random(200));
+*/
+
+/* 
+  changeColorByHex("5300ff");
+  delay(random(100));
+  changeColorByHex("0018ff");
+  delay(random(100));
+  changeColorByHex("0060ff");
+  delay(random(100));
+  changeColorByHex("0066ff");
+  delay(random(100));
+*/
+
+/* 
+  FadeOn(RledPin);
+  FadeOn(GledPin);
+  FadeOn(BledPin);
+  Pulse(RledPin, 5, 1);
+  Pulse(RledPin, 5, 4);
+  Pulse(RledPin, 5, 10);
+  TurnOff(RledPin);
+  TurnOff(GledPin);
+  TurnOff(BledPin);
+
+  //Serial.println("Main loop end");
 */
 }
